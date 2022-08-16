@@ -1,21 +1,21 @@
-# https://git-scm.com/docs/git-config
+# see https://git-scm.com/docs/git-config
 
 [user]
-        email = 63722857+Vanishine@users.noreply.github.com
-        name = Vanishine
+	email = 63722857+Vanishine@users.noreply.github.com
+	name = Vanishine
 	#signingKey = FFFFFFFFFFFFFFFF!
 [pull]
-        rebase = true
+	rebase = true
 [commit]
 	#gpgSign = true
 [rebase]
-        autoSquash = true
-        autoStash = true
+	autoSquash = true
+	autoStash = true
 [init]
-        defaultBranch = main
+	defaultBranch = main
 [core]
-        autocrlf = false
-        editor = vim
+	autocrlf = false
+	editor = vim
 [grep]
 	lineNumber = true
 [includeIf "gitdir:~/workspaces/business/"]
