@@ -1,0 +1,12 @@
+[user]
+        email = 63722857+Vanishine@users.noreply.github.com
+        name = Vanishine
+[pull]
+        rebase = true
+[rebase]
+        autosquash = true
+        autoStash = true
+[init]
+        defaultBranch = main
+[core]
+        autocrlf = false
