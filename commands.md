@@ -1,3 +1,14 @@
+## Docker
+
+ Get a bunch of IP addresses using macvlan to avoid port conflicts on the same machine.
+
+```bash
+docker network create -d macvlan --subnet=10.10.0.0/18 --ip-range=10.10.10.0/24 --gateway=10.10.1.1 -o parent=eth0 pub
+for n in {0..2}; do
+  docker run --net pub --name es$n --ip 10.10.10.6$n -it docker.elastic.co/elasticsearch/elasticsearch:8.3.3
+done
+```
+
 ## tar
 
 ### tar with zstd compression algorithm
