@@ -1,0 +1,10 @@
+# https://man.openbsd.org/ssh_config
+
+IdentitiesOnly yes
+ForwardAgent no
+
+Host gitlab.com
+	IdentityFile ~/.ssh/git
+
+Host github.com
+	IdentityFile ~/.ssh/git
